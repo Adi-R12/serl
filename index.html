@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Jawahar Lal Nehru College Dehri-on-sone</title>
+<link rel="stylesheet" href="css/style.css"/>
+<!--fav-icon-->
+<link rel="shortcut icon" href="images/favicon.png"/>
+<style>
+    /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 400px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+  
+}
+</style>
+</head>
+
+<body>
+    
+    <section class="main" style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iiita.ac.in%2Fuploads%2Fcarousel%2Fcampus818901.jpg&f=1&nofb=1&ipt=f46fa53f49f5f3767b1de7a6cb28a04c9556ee4094870d2d12a2fb43bfbfa2d3&ipo=images);">
+        
+        <nav>
+            <a href="#" class="logo">
+               
+                <div class="name"><p>The Software Engineering Research Lab (SERL)</p></div>  <!-- <img src="images/serllogo (1).png" width="100px" height="100px" /> -->
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu" style="border-radius: 5px;">
+                <li><a href="#">About</a></li>               
+                <li><a href="#"> Faculty</a></li>
+                <li><a href="#"> Researchers</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a class="active" onclick="document.getElementById('id01').style.display='block'" style="width:auto; border-radius: 5px; cursor: pointer;">Login</a></li>
+            </ul>
+        </nav>
+       
+        <!-- login modal start -->
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post" style="
+            width: 400px;
+        ">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <p style="font-size: 22px;">Student Login </p>
+                <hr>
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="#">Register Here</a></span>
+                <span class="psw" style="margin-right: 11px;"><a href="#">Forgot  password?</a></span>
+              </div>
+            </form>
+          </div>
+        <!-- login modal end  -->
+
+
+        <!--main-content-->
+        <div class="home-content">
+            
+            <!--text-->
+            <!-- <div class="home-text" >
+                
+                <h3 style="color:black; letter-spacing: 3px;">Welcome to IIIT Allahabad College</h3>
+                <h1 style="color: white;"> Software Engineering Research Lab (SERL)</h1>
+                <p style="color: white;">The purpose of Schools is to prepare students with promise
+                    to enhance their intellectual, physical, social, emotional, spiritual,
+                    and artistic growth so that they may realize their power for good
+                    as citizens</p> -->
+            <!--login-btn-->
+            <!-- <a href="#" class="main-login" style="border-radius: 5px;">Apply Now</a> -->
+            </div>
+            <!--img-->
+            
+        </div>
+        
+        <!--arrow-->
+        <div class="arrow"></div>
+        <span class="scroll">Scroll</span>
+    </section>
+    
+    <!--services----------------------->
+    <section class="services">
+        <!--heading----------->
+        <div class="services-heading">
+            <h2>Indian Institute of Information Technology, Allahabad</h2>
+            
+        </div>
+        <!--box-container----------------->
+        <div class="box-container">
+            <!--box-1-------->
+            <div class="box">
+                <img src="images/icon5.png">
+                <font>About - SERL</font>
+                <p>The Software Engineering Research Lab (SERL) at IIIT Allahabad is to be established to undertake world-class research in designing of complex, largescale software
+                  -intensive systems of scalable solutions, which are steered by business needs.
+                   The objective of the establishment of SERL@IIITA is to cover cross-disciplinary research domains and to address real industrial software engineering challenges.
+                    Recent developments in data driven industries, cyber physical systems, smart city applications and business intelligence solutions have significant scope
+                    for software development industries and finding solutions to underneath challenges in collaboration with industry experts is genuinely needed to make sure that the 
+                    solutions are evaluated thoroughly and fit in the industrial context.
+                   Thus the establishment of Software Engineering Research Lab at IIITA may provide a strong platform to researchers and students to showcase their research potential world-wide.</p>
+                <!--btn--------->
+                <a href="#">Apply Now</a>
+            </div>
+            <!--box-2-------->
+            <div class="box">
+                <img src="images/icon5.png">
+                <font>Vision and Mission</font>
+                <p>"Big thinking precedes great achievement."
+
+                  The mission of this initiative is to establish a research lab of an industrial repute through various scholarly activities such as development of software tools,
+                   establishment of special interest groups, organizing conferences, workshops, forums for open source solutions and hands-on training in order to provide reliable
+                    and repeatable results to reflect our core strategy and vision of deepening excellence..</p>
+                <!--btn--------->
+                <a href="#">Apply Now</a>
+            </div>
+            <!--box-3-------->
+            <div class="box">
+                <img src="images/icon5.png">
+                <font>NEWS</font>
+                <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+                <!--btn--------->
+                <a href="#">Apply Now</a>
+            </div>
+            <!--box-4-------->
+            <div class="box">
+                <img src="images/icon5.png">
+                <font>Publication</font>
+                <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua.</p>
+                <!--btn--------->
+                <a href="#">Apply Now</a>
+            </div>
+            <!--box-1-------->
+            
+        </div>
+    </section>
+    
+    <!--footer------------->
+    <footer>
+        <p>Copyright (C) - 2023 | Developed By IIIT Allahabad </p>
+        <p>© 2017 SERL - Software Engineering Research Lab</p>
+    </footer>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+</body>
+
+</html>
